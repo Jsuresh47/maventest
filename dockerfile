@@ -1,3 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ADD target/my-app-1.0-SNAPSHOT.jar app.jar
+ADD /var/lib/jenkins/workspace/my__job/target app.jar
 ENTRYPOINT exec java -jar /app.jar
